@@ -7,17 +7,12 @@ pipeline{
     stages {
 
         stage('Git checkout'){
-
-        
-            steps{
-
+           steps{
                 script{
-
                     gitCheckout{ 
                         branch: "main"
                         url: "https://github.com/prakriti0427/java_app.git"
                     }
-
                 }
             }
     }
@@ -26,7 +21,6 @@ pipeline{
                 script{
                     mvnTest()
                 }
-
             }
         }
 }
