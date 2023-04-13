@@ -8,7 +8,7 @@ pipeline{
         stage('Git checkout'){
            steps{
            gitCheckout( 
-                        branch: "main"
+                        branch: "main",
                         url: "https://github.com/prakriti0427/java_app.git"
            )
                 }
