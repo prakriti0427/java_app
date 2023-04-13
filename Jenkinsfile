@@ -1,4 +1,4 @@
-@Library ('my-shared-library') _
+@Library('my-shared-library') _
 
 pipeline{
 
@@ -24,7 +24,7 @@ pipeline{
         stage('Unit test Maven'){
             steps{
                 script{
-                    mvnTest
+                    mvnTest()
                 }
 
             }
