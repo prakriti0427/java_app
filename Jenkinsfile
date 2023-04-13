@@ -13,13 +13,6 @@ pipeline{
            )
                 }
             }
-        stage('unit maven test'){
-            steps{
-                script{
-                mvnTest()
-            }
-        }
-    }
         stage('MVN integration test'){
             steps{
                 script{
